@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: brown;
+            background-color: bisque ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var name = window.prompt('Qual o nome do produto ?')
+        var valorProduto = Number(window.prompt('Qual o valor do produto ?'))
+        var Descont = Number(window.prompt('Desconto aplicado ?'))
+        var total = valorProduto - ( Descont * valorProduto / 100) 
+        document.write(`O produto ${name} ficou por ${total}`)
+    </script>
+</body>
+</html>
