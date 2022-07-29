@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            div#ara {
+                background: bisque;
+                width: 300px;
+                height: 300px;
+                font-family: serif;
+                color:   burlywood;
+                line-height: 300px;
+                text-align: center;
+            }
+        </style>
+</head> 
+<body>
+    <div id="ara">
+        Interajindo....
+    </div>    
+    <p>Testando a primeiro paragrafo</p>
+    <p>Testando a primeiro paragrafo 2</p>
+    <p>Testando a primeiro paragrafo 3</p>
+    <p>Testando a primeiro paragrafo 4</p>
+    <script>
+
+        var p1q = window.document.querySelector('div#ara')
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var a = window.document.getElementById('ara')
+        
+        p1q.style.color = 'pink'
+        p1.style.color = 'Blue'
+        window.document.write(p1.innerText)
+        
+        a.addEventListener('click',clicando)
+        a.addEventListener('mouseout',sair)
+        a.addEventListener('mouseenter',entrou)
+
+        function clicando (){
+            a.innerText = `clicou`
+            a.style.background = 'black'
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+        }
+        function entrou(){
+            a.innerText  = 'Entrou'
+        }
+
+    </script>
+</body>
+</html>
